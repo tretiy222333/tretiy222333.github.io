@@ -1,0 +1,86 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* About section */
+.about {
+    margin-bottom: 30px;
+}
+
+.about h2 {
+    font-size: 2em;
+    color: #444;
+}
+
+.about p {
+    font-size: 1.1em;
+}
+
+.about ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Download section */
+.download {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.download h2 {
+    font-size: 2em;
+    color: #444;
+}
+
+.download .download-button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.download .download-button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #666;
+}
+
+footer p {
+    font-size: 0.9em;
+}

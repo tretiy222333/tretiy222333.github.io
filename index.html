@@ -3,32 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RegisterScanner</title>
+  <title>RegisterScanner + Checker</title>
   <link rel="stylesheet" href="style.css"/>
+  <script>
+    function switchLanguage(lang) {
+      const elements = document.querySelectorAll('[data-en], [data-ru]');
+      elements.forEach(el => {
+        el.innerText = el.getAttribute(`data-${lang}`);
+      });
+    }
+  </script>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>RegisterScanner</h1>
-      <p class="tagline">Your tool for scanning and analyzing system registers</p>
+      <h1 data-en="RegisterScanner + Checker" data-ru="Регистратор + Проверщик">RegisterScanner + Checker</h1>
+      <p class="tagline" data-en="Advanced tools for scanning and verifying system changes"
+                         data-ru="Инструменты для сканирования и проверки системных изменений">
+        Advanced tools for scanning and verifying system changes
+      </p>
+      <div class="language-switcher">
+        <button onclick="switchLanguage('en')">EN</button>
+        <button onclick="switchLanguage('ru')">RU</button>
+      </div>
     </header>
 
     <section class="about">
-      <h2>About RegisterScanner</h2>
-      <p>RegisterScanner is a powerful tool designed to scan, analyze, and manage system registers. It provides an easy-to-use interface and powerful scanning capabilities that help you manage system configurations and find issues that might be affecting performance.</p>
-      <p>Key Features:</p>
+      <h2 data-en="About RegisterScanner" data-ru="О программе RegisterScanner">About RegisterScanner</h2>
+      <p data-en="RegisterScanner is a powerful tool designed to scan, analyze, and manage system registers. It provides an easy-to-use interface and powerful scanning capabilities that help you manage system configurations and find issues that might be affecting performance."
+         data-ru="RegisterScanner — мощный инструмент для сканирования, анализа и управления системным реестром. Прост в использовании и помогает выявлять проблемы производительности.">
+        RegisterScanner is a powerful tool designed to scan, analyze, and manage system registers...
+      </p>
+      <p data-en="Key Features:" data-ru="Ключевые возможности:">Key Features:</p>
       <ul>
-        <li>Fast and reliable scanning</li>
-        <li>Easy-to-understand report generation</li>
-        <li>System performance insights</li>
+        <li data-en="Fast and reliable scanning" data-ru="Быстрое и надёжное сканирование">Fast and reliable scanning</li>
+        <li data-en="Easy-to-understand report generation" data-ru="Понятная генерация отчётов">Easy-to-understand report generation</li>
+        <li data-en="System performance insights" data-ru="Анализ производительности системы">System performance insights</li>
+      </ul>
+    </section>
+
+    <section class="about">
+      <h2 data-en="About Checker" data-ru="О программе Checker">About Checker</h2>
+      <p data-en="Checker is a utility that verifies file integrity and system states. It is especially useful after critical updates or software installations. Checker compares baseline values and helps identify tampering, corruption, or unauthorized changes."
+         data-ru="Checker — это утилита для проверки целостности файлов и состояния системы. Особенно полезна после обновлений и установок ПО. Сравнивает базовые значения и помогает выявить повреждения или вмешательства.">
+        Checker is a utility that verifies file integrity and system states...
+      </p>
+      <p data-en="Key Features:" data-ru="Ключевые возможности:">Key Features:</p>
+      <ul>
+        <li data-en="File and registry consistency check" data-ru="Проверка целостности файлов и реестра">File and registry consistency check</li>
+        <li data-en="Fast comparison with baseline snapshots" data-ru="Сравнение с базовыми снимками">Fast comparison with baseline snapshots</li>
+        <li data-en="Lightweight and portable" data-ru="Лёгкость и портативность">Lightweight and portable</li>
+      </ul>
+    </section>
+
+    <section class="requirements">
+      <h2 data-en="System Requirements" data-ru="Системные требования">System Requirements</h2>
+      <ul>
+        <li data-en="Operating System: Windows 7 / 8 / 10 / 11 (32-bit or 64-bit)"
+            data-ru="ОС: Windows 7 / 8 / 10 / 11 (32- или 64-бит)">
+          Operating System: Windows 7 / 8 / 10 / 11 (32-bit or 64-bit)
+        </li>
+        <li data-en="RAM: 2 GB minimum"
+            data-ru="Оперативная память: от 2 ГБ">
+          RAM: 2 GB minimum
+        </li>
+        <li data-en="Disk Space: 50 MB available"
+            data-ru="Свободное место на диске: 50 МБ">
+          Disk Space: 50 MB available
+        </li>
+        <li data-en=".NET Framework: 4.5 or higher"
+            data-ru=".NET Framework: версии 4.5 или выше">
+          .NET Framework: 4.5 or higher
+        </li>
+        <li data-en="Administrator rights required for some functions"
+            data-ru="Для некоторых функций требуются права администратора">
+          Administrator rights required for some functions
+        </li>
       </ul>
     </section>
 
     <section class="download">
-      <h2>Download Now</h2>
+      <h2 data-en="Download Now" data-ru="Скачать">Download Now</h2>
       <div class="columns">
         <div class="column">
-          <h3>Password: Scanner</h3>
+          <h3 data-en="Password: Scanner" data-ru="Пароль: Scanner">Password: Scanner</h3>
           <a href="RegisterScanner-64bit.rar" class="download-button" download>RegisterScanner Portable (64bit)</a>
           <a href="RegisterScanner-32bit.rar" class="download-button" download>RegisterScanner Portable (32bit)</a>
           <a href="RegisterScanner-64bit.exe" class="download-button" download>RegisterScanner Installer (64bit)</a>
@@ -36,7 +94,7 @@
         </div>
 
         <div class="column">
-          <h3>Password: Checker</h3>
+          <h3 data-en="Password: Checker" data-ru="Пароль: Checker">Password: Checker</h3>
           <a href="Checker-64bit.rar" class="download-button" download>Checker Portable (64bit)</a>
           <a href="Checker-32bit.rar" class="download-button" download>Checker Portable (32bit)</a>
           <a href="Cheker-64bit.exe" class="download-button" download>Checker Installer (64bit)</a>
@@ -46,7 +104,7 @@
     </section>
 
     <footer>
-      <p>&copy; 2025 RegisterScanner. All rights reserved.</p>
+      <p>&copy; 2025 RegisterScanner + Checker. All rights reserved.</p>
     </footer>
   </div>
 </body>

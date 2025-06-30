@@ -50,32 +50,51 @@ header .tagline {
 
 /* Download section */
 .download {
-    text-align: center;
     margin-top: 30px;
 }
 
 .download h2 {
+    text-align: center;
     font-size: 2em;
     color: #444;
+    margin-bottom: 30px;
 }
 
-.download p {
-    font-size: 1.1em;
+.columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.column h3 {
+    font-size: 1.2em;
+    color: #555;
     margin-bottom: 20px;
 }
 
-.download .download-button {
+.download-button {
     background-color: #4CAF50;
     color: white;
-    font-size: 1.2em;
-    padding: 15px 30px;
+    font-size: 1em;
+    padding: 12px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    margin: 10px;
-    display: inline-block;
+    border-radius: 6px;
+    margin: 10px 0;
+    display: block;
+    transition: background-color 0.2s;
 }
 
-.download .download-button:hover {
+.download-button:hover {
     background-color: #45a049;
 }
 

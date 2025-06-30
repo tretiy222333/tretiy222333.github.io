@@ -59,6 +59,11 @@ header .tagline {
     color: #444;
 }
 
+.download p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
 .download .download-button {
     background-color: #4CAF50;
     color: white;
@@ -66,7 +71,7 @@ header .tagline {
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin: 10px;
     display: inline-block;
 }
 
